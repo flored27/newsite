@@ -1,3 +1,96 @@
-.col-12 {
-    padding-right: 0px;
-}
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #dfa6d1d5;
+  }
+  
+  .fontFam,
+  .p_services {
+    /* Font style for Header and footer */
+    font-family: "Brush Script MT", cursive;
+    color: rgb(255, 255, 255) !important;
+    text-shadow: black 2px 2px 2px;
+    letter-spacing: 1px;
+  }
+  
+  .navbar-collapse {
+    border-width: 1px;
+    border-top-style: solid;
+    border-top-color: #dfa6d1d5;
+  }
+  
+  p,
+  h5 {
+    text-shadow: 5px 5px 5px rgb(131, 117, 117);
+  }
+  
+  .p_services {
+    margin-bottom: 0px;
+    padding: 12px;
+    font-size: x-large;
+    letter-spacing: 1px;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgb(194 182 182 / 25%);
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: white;
+    background-color: rgba(131, 117, 117, 0.637);
+    text-shadow: black 1px 1px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    header,
+    footer,
+    #carouselExampleCaptions,
+    #services_header,
+    #accordionFlushExample,
+    #contact_header,
+    #contact_card {
+      width: 80%;
+      margin: 0px auto;
+    }
+    #navbarNav,
+    #toogler_display {
+      display: none !important;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    #carouselExampleCaptions {
+      width: 45%;
+      margin: 2% 0 2% 11%;
+    }
+    #services_header,
+    #accordionFlushExample,
+    #contact_header,
+    #contact_card {
+      position: absolute;
+      top: 17%;
+      left: 59%;
+      width: 30%;
+      margin-right: 11%;
+    }
+  
+    #accordionFlushExample {
+      top: 26%;
+    }
+  
+    #contact_header {
+      top: 55%;
+    }
+  
+    #contact_card {
+      top: 64%;
+    }
+  
+    footer {
+      position: fixed;
+      top: 91%;
+      left: 10%;
+    }
+  }
+  
